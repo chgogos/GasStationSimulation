@@ -58,5 +58,8 @@ public class GasStationNumberOfPumpsExperiment {
 			System.out.printf("Pumps %d --> %.2f\n", number_of_pumps[i],
 					avg_wait_time[i]);
 		}
+		
+		PumpsVsWaitTime frame = new PumpsVsWaitTime(number_of_pumps, avg_wait_time);
+		frame.setVisible(true);
 	}
 }
