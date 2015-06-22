@@ -40,13 +40,13 @@ public class PumpsVsWaitTime extends JFrame {
 
 		getContentPane().add(new InteractivePanel(plot), BorderLayout.CENTER);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setLocationRelativeTo(null);
+//		setLocationRelativeTo(null);
 		setSize(800, 600);
 	}
 
 	public static void main(String[] args) {
-		int[] pumps = { 3, 4, 5, 6 };
-		double[] avgWaitTime = { 17.64, 4.89, 3.72, 3.14, 3.06 };
+		int[] pumps = { 4, 5, 6 };
+		double[] avgWaitTime = { 4.89, 3.72, 3.14, 3.06 };
 		PumpsVsWaitTime frame = new PumpsVsWaitTime(pumps, avgWaitTime);
 		frame.setVisible(true);
 	}

@@ -40,6 +40,10 @@ public class Simulation {
 	public void displaySummary() {
 	}
 
+	public void displayLog(){
+		
+	}
+	
 	public void run(double startTime, double endTime) {
 		currentTime = startTime;
 		while (eventQueue.size() > 0 && currentTime <= endTime) {
@@ -49,5 +53,10 @@ public class Simulation {
 			display();
 		}
 		displaySummary();
+	}
+
+	public void analyzeLogEntries(int x) {
+
+		
 	}
 }
