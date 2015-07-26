@@ -2,9 +2,9 @@ package simulation;
 
 public class LogEntry implements Comparable<LogEntry> {
 	int car_id;
-	double start_time;
-	double finish_time;
-	boolean non_fuel_service;
+	public double start_time;
+	public double finish_time;
+	public boolean non_fuel_service;
 
 	public LogEntry(int car_id, double start_time, double finish_time,
 			boolean nfs) {

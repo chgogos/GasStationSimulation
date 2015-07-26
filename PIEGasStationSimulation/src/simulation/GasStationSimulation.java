@@ -155,4 +155,8 @@ public class GasStationSimulation extends Simulation {
 		}
 		return false;
 	}
+	
+	public List<LogEntry> getLogEntries(){
+		return logEntries;
+	}
 }
